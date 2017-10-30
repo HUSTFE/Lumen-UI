@@ -1,0 +1,48 @@
+.lumen-label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    height: .7rem;
+    font-weight: normal;
+}
+
+.lumen-label-default {
+    color: #555555;
+    background-color: #eeeeee;
+}
+
+.lumen-label-primary {
+    background-color: #158cba;
+}
+
+.lumen-label-success {
+    background-color: #28b62c;
+}
+
+.lumen-label-info {
+    background-color: #75caeb;
+}
+
+.lumen-label-warning {
+    background-color: #ff851b;
+}
+
+.lumen-label-danger {
+    background-color: #ff4136;
+}
+
+.lumen-label.badge {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    padding: 0;
+    line-height: 1rem;
+    margin-top: -1rem;
+    position: absolute;
+}
