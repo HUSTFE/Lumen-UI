@@ -1,0 +1,31 @@
+.lumen-bc {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #fafafa;
+    border-radius: 4px;
+    border-color: #ededed;
+    border-style: solid;
+    border-width: 0 1px 4px 1px;
+    text-align: left;
+}
+
+.lumen-bc > li {
+    display: inline-block;
+    color: #999999;
+}
+
+.lumen-bc li + li:before {
+    content: ">\00a0";
+    padding: 0 8px;
+    color: #999999;
+}
+
+.lumen-bc li a {
+    color: #158cba;
+    text-decoration: none;
+}
+
+.lumen-bc > li:last-child {
+    font-weight: bold;
+}
