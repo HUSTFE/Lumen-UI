@@ -4,6 +4,7 @@ import './App.css';
 import Button from "./Component/Button";
 import Dropdown from "./Component/Dropdown";
 import Label from "./Component/Label";
+import Breadcrumb from "./Component/Breadcrumb/index";
 
 
 class App extends Component {
@@ -64,9 +65,17 @@ class App extends Component {
           <Label type="warning">success</Label>
           <Label type="danger">danger</Label>
         </div>
-        <div>
+        <div className="flex-box">
           <Button type="info" size="icon">?<Label type="danger" size="badge">10</Label></Button>
         </div>
+        <h1>Breadcrumb</h1>
+        <Breadcrumb
+          list={[
+            <a href="#">First step</a>,
+            "Last step",
+            "Now step"
+          ]}
+        />
       </div>
     );
   }
