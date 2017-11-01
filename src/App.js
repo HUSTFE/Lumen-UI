@@ -7,6 +7,7 @@ import Label from "./Component/Label";
 import Breadcrumb from "./Component/Breadcrumb";
 import Panel from "./Component/Panel";
 import Message from "./Component/Message";
+import Input from "./Component/Input/index";
 
 
 class App extends Component {
@@ -102,6 +103,23 @@ class App extends Component {
         <Message type={"danger"}>
           <p>This is a message</p>
         </Message>
+        <h1>Input</h1>
+        <Input.group>
+          <Input.label>Normal</Input.label>
+          <Input/>
+        </Input.group>
+        <Input.group state={"warning"}>
+          <Input.label>Warning</Input.label>
+          <Input/>
+        </Input.group>
+        <Input.group state={"danger"} >
+          <Input.label>Danger</Input.label>
+          <Input/>
+        </Input.group>
+        <Input.group state={"success"}>
+          <Input.label>Success</Input.label>
+          <Input/>
+        </Input.group>
       </div>
     );
   }
