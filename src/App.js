@@ -4,8 +4,10 @@ import './App.css';
 import Button from "./Component/Button";
 import Dropdown from "./Component/Dropdown";
 import Label from "./Component/Label";
-import Breadcrumb from "./Component/Breadcrumb/index";
-import Panel from "./Component/Panel/index";
+import Breadcrumb from "./Component/Breadcrumb";
+import Panel from "./Component/Panel";
+import Message from "./Component/Message";
+import Input from "./Component/Input/index";
 
 
 class App extends Component {
@@ -81,11 +83,43 @@ class App extends Component {
         <Panel style={{textAlign: "left"}}>
           <Panel.head>Basic Panel Head</Panel.head>
           <Panel.body>Basic Panel</Panel.body>
-          <Panel.foot>          <Button.Group>
-            <Button type="success">Yes</Button>
-            <Button type="danger">No</Button>
-          </Button.Group></Panel.foot>
+          <Panel.foot>
+            <Button.Group>
+              <Button type="info">Yes</Button>
+              <Button type="default">No</Button>
+            </Button.Group>
+          </Panel.foot>
         </Panel>
+        <h1>Message</h1>
+        <Message title={"Warning"}>
+          <p>This is a message</p>
+        </Message>
+        <Message type={"info"}>
+          <p>This is a message</p>
+        </Message>
+        <Message type={"success"}>
+          <p>This is a message</p>
+        </Message>
+        <Message type={"danger"}>
+          <p>This is a message</p>
+        </Message>
+        <h1>Input</h1>
+        <Input.group>
+          <Input.label>Normal</Input.label>
+          <Input/>
+        </Input.group>
+        <Input.group state={"warning"}>
+          <Input.label>Warning</Input.label>
+          <Input/>
+        </Input.group>
+        <Input.group state={"danger"} >
+          <Input.label>Danger</Input.label>
+          <Input/>
+        </Input.group>
+        <Input.group state={"success"}>
+          <Input.label>Success</Input.label>
+          <Input/>
+        </Input.group>
       </div>
     );
   }

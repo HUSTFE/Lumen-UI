@@ -1,0 +1,59 @@
+.lumen-input {
+    display: block;
+    width: 100%;
+    padding: 7px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.075);
+    box-sizing: border-box;
+}
+
+.lumen-input-group.warning > .lumen-input {
+    border: 1px solid #ff851b;
+    box-shadow: inset 0 2px 0 rgba(195, 91, 0, 0.075);
+}
+
+.lumen-input-group.danger > .lumen-input {
+    border: 1px solid #ff4136;
+    box-shadow: inset 0 2px 0 rgba(222, 12, 0, 0.075);
+}
+
+.lumen-input-group.success > .lumen-input {
+    border: 1px solid #28b62c;
+    box-shadow: inset 0 2px 0 rgba(12, 57, 14, 0.075);
+}
+
+.lumen-input:focus {
+    box-shadow: inset 1px 3px 0 rgba(0, 0, 0, 0.075);
+}
+
+.lumen-input-label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+.lumen-input-group.warning > .lumen-input-label {
+    color: #ff851b;
+}
+
+.lumen-input-group.danger > .lumen-input-label {
+    color: #ff4136;
+}
+
+.lumen-input-group.success > .lumen-input-label {
+    color: #28b62c;
+}
+
+.lumen-input-group {
+    text-align: left;
+    margin-bottom: 10px;
+}

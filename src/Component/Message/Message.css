@@ -1,0 +1,61 @@
+.lumen-msg {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: solid;
+    border-width: 0 1px 4px 1px;
+    color: #ffffff;
+    padding-right: 35px;
+    text-align: left;
+}
+
+.lumen-msg h4 {
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.lumen-msg p {
+    margin: 0;
+}
+
+.lumen-msg-success {
+    background-color: #28b62c;
+    border-color: #23a127;
+
+}
+
+.lumen-msg-info {
+    background-color: #75caeb;
+    border-color: #5fc1e8;
+}
+
+.lumen-msg-warning {
+    background-color: #ff851b;
+    border-color: #ff7701;
+}
+
+.lumen-msg-danger {
+    background-color: #ff4136;
+    border-color: #ff291c;
+}
+
+.lumen-msg-close {
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.4;
+    position: relative;
+    top: -2px;
+    right: -21px;
+    outline: none;
+    color: inherit;
+}
