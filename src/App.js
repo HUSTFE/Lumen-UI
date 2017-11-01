@@ -5,6 +5,7 @@ import Button from "./Component/Button";
 import Dropdown from "./Component/Dropdown";
 import Label from "./Component/Label";
 import Breadcrumb from "./Component/Breadcrumb/index";
+import Panel from "./Component/Panel/index";
 
 
 class App extends Component {
@@ -62,7 +63,7 @@ class App extends Component {
           <Label type="primary">primary</Label>
           <Label type="success">success</Label>
           <Label type="info">info</Label>
-          <Label type="warning">success</Label>
+          <Label type="warning">warning</Label>
           <Label type="danger">danger</Label>
         </div>
         <div className="flex-box">
@@ -76,6 +77,15 @@ class App extends Component {
             "Now step"
           ]}
         />
+        <h1>Panel</h1>
+        <Panel style={{textAlign: "left"}}>
+          <Panel.head>Basic Panel Head</Panel.head>
+          <Panel.body>Basic Panel</Panel.body>
+          <Panel.foot>          <Button.Group>
+            <Button type="success">Yes</Button>
+            <Button type="danger">No</Button>
+          </Button.Group></Panel.foot>
+        </Panel>
       </div>
     );
   }
