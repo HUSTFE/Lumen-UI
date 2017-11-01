@@ -13,6 +13,11 @@
     font-size: 1.4em;
     font-weight: normal;
     margin: 0;
+    margin-bottom: 10px;
+}
+
+.lumen-msg p {
+    margin: 0;
 }
 
 .lumen-msg-success {
