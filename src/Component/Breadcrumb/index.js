@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types';
 import "./Breadcrumb.css";
 
 class Breadcrumb extends React.Component {
@@ -19,9 +18,5 @@ class Breadcrumb extends React.Component {
 
   item = (props) => (<li>{props.children}</li>)
 }
-
-Breadcrumb.propTypes = {
-
-};
 
 export default Breadcrumb;

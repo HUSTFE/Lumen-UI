@@ -18,7 +18,7 @@ class Navbar extends React.Component {
 }
 
 Navbar.propTypes = {
-
+  logo: PropTypes.node,
 };
 
 export default Navbar;

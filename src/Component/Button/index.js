@@ -23,7 +23,9 @@ class Button extends React.Component {
 
 Button.propTypes = {
   type: PropTypes.oneOf(['default','primary','success','info','warning','danger']),
-  size: PropTypes.oneOf(['large','small','icon'])
-}
+  size: PropTypes.oneOf(['large','small','icon']),
+  disabled: PropTypes.bool,
+  onClick: PropTypes.func
+};
 
 export default Button

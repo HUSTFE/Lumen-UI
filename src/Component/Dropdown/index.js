@@ -5,8 +5,6 @@ import "./Dropdown.css";
 class Dropdown extends React.Component {
   render() {
     const props = this.props;
-    const item = this.item;
-
 
     return (
       <div style={{position: "absolute"}}>
@@ -26,7 +24,7 @@ class Dropdown extends React.Component {
 }
 
 Dropdown.propTypes = {
-
+  display: PropTypes.bool
 };
 
 export default Dropdown;

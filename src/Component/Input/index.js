@@ -17,7 +17,7 @@ class Input extends React.Component {
 }
 
 Input.propTypes = {
-
+  state: PropTypes.oneOf(['default','primary','success','info','warning','danger'])
 };
 
 export default Input;
