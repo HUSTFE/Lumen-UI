@@ -3,14 +3,7 @@ import logo from './logo.svg';
 import navLogo from './Assets/Lumen-UI.png'
 import './App.css';
 
-import Button from "./Component/Button";
-import Dropdown from "./Component/Dropdown";
-import Label from "./Component/Label";
-import Breadcrumb from "./Component/Breadcrumb";
-import Panel from "./Component/Panel";
-import Message from "./Component/Message";
-import Input from "./Component/Input";
-import Navbar from "./Component/Navbar";
+import  {Button, Dropdown, Label, Breadcrumb, Panel, Message, Input, Navbar} from "../src"
 
 
 class App extends Component {
