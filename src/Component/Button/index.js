@@ -18,7 +18,7 @@ class Button extends React.Component {
     )
   }
 
-  static Group = (props) => (<div className="lumen-btn-group">{props.children}</div>)
+  static Group = function(props) { return (<div className="lumen-btn-group">{props.children}</div>) }
 }
 
 Button.propTypes = {

@@ -16,7 +16,7 @@ class Breadcrumb extends React.Component {
     )
   }
 
-  item = (props) => (<li>{props.children}</li>)
+  item = function(props) { return (<li>{props.children}</li>) }
 }
 
 export default Breadcrumb;
