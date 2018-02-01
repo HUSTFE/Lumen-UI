@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import navLogo from './Assets/Lumen-UI.png'
 import './App.css';
-import Button from "./Component/Button";
-import Dropdown from "./Component/Dropdown";
-import Label from "./Component/Label";
-import Breadcrumb from "./Component/Breadcrumb";
-import Panel from "./Component/Panel";
-import Message from "./Component/Message";
-import Input from "./Component/Input/index";
+
+import  {Button, Dropdown, Label, Breadcrumb, Panel, Message, Input, Navbar} from "../src"
 
 
 class App extends Component {
@@ -21,6 +17,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Navbar className="app-nav" logo={<img src={navLogo}/>}>
+          <a href="#index">Index</a>
+          <a href="#doc">Document</a>
+          <a href="https://github.com/HUSTFE/Lumen-UI" target="_blank">Github</a>
+        </Navbar>
         <h1>Lumen UI</h1>
         <img width="256px" src={logo}/>
         <p>It's <a href="https://github.com/HUSTFE">HUSTFE</a>'s UI Compoments Library</p>
@@ -120,6 +121,8 @@ class App extends Component {
           <Input.label>Success</Input.label>
           <Input/>
         </Input.group>
+        <h1>Navbar</h1>
+        <Navbar/>
       </div>
     );
   }

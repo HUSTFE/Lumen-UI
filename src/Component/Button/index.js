@@ -18,12 +18,14 @@ class Button extends React.Component {
     )
   }
 
-  static Group = (props) => (<div className="lumen-btn-group">{props.children}</div>)
+  static Group = function(props) { return (<div className="lumen-btn-group">{props.children}</div>) }
 }
 
 Button.propTypes = {
   type: PropTypes.oneOf(['default','primary','success','info','warning','danger']),
-  size: PropTypes.oneOf(['large','small','icon'])
-}
+  size: PropTypes.oneOf(['large','small','icon']),
+  disabled: PropTypes.bool,
+  onClick: PropTypes.func
+};
 
 export default Button

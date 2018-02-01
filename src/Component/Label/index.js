@@ -16,7 +16,8 @@ class Label extends React.Component {
 }
 
 Label.propTypes = {
-
+  type: PropTypes.oneOf(['default','primary','success','info','warning','danger']),
+  size: PropTypes.oneOf(['', 'badge'])
 };
 
 export default Label;

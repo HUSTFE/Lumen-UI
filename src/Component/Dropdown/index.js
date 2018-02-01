@@ -5,28 +5,25 @@ import "./Dropdown.css";
 class Dropdown extends React.Component {
   render() {
     const props = this.props;
-    const item = this.item;
-
 
     return (
       <div style={{position: "absolute"}}>
         <ul className={"lumen-dd" + (props.display ? "" : " hidden")} >
           {
             React.Children.map(props.children, function (child) {
-              return <this.item>{child}</this.item>
-            }.bind(this))
+              return <li className="lumen-dd-item">{child}</li>
+            })
           }
         </ul>
       </div>
       )
   }
 
-  item = (props) => (<li className="lumen-dd-item">{props.children}</li>)
-  static line = (props) => (<div className="lumen-dd-line"></div>)
+  static line = function(props) { return (<div className="lumen-dd-line" {...props}></div>) }
 }
 
 Dropdown.propTypes = {
-
+  display: PropTypes.bool
 };
 
 export default Dropdown;

@@ -18,7 +18,8 @@ class Message extends React.Component {
 }
 
 Message.propTypes = {
-
+  type: PropTypes.oneOf(['success','info','warning','danger']),
+  title: PropTypes.node
 };
 
 export default Message;

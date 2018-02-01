@@ -12,12 +12,12 @@ class Input extends React.Component {
     )
   }
 
-  static label = (props) => <label className={"lumen-input-label"} {...props}>{props.children}</label>
-  static group = (props) => <div className={"lumen-input-group " + (props.state)}>{props.children}</div>
+  static label = function(props) { return <label className={"lumen-input-label"} {...props}>{props.children}</label> }
+  static group = function(props) { return <div className={"lumen-input-group " + (props.state)}>{props.children}</div> }
 }
 
 Input.propTypes = {
-
+  state: PropTypes.oneOf(['default','primary','success','info','warning','danger'])
 };
 
 export default Input;
