@@ -35,6 +35,14 @@ class App extends Component {
           <Button type="danger">danger</Button>
         </div>
         <div className="flex-box">
+          <Button revert>default</Button>
+          <Button revert type="primary">primary</Button>
+          <Button type="success" revert>success</Button>
+          <Button type="info" revert>info</Button>
+          <Button type="warning" revert>success</Button>
+          <Button type="danger" revert>danger</Button>
+        </div>
+        <div className="flex-box">
           <Button.Group>
             <Button type="primary">primary</Button>
             <Button type="success">success</Button>
