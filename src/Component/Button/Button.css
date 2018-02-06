@@ -150,45 +150,24 @@
     border-color: #127ba3;
 }
 
-.lumen-btn-primary.revert:active {
-    background-color: #106a8c;
-    border-color: #052531;
-}
 .lumen-btn-success.revert {
     color: #28b62c;
     border-color: #23a127;
 }
 
-.lumen-btn-success.revert:active {
-    background-color: #1f8c22;
-    border-color: #0c390e;
-}
 .lumen-btn-info.revert {
     color: #75caeb;
     border-color: #5fc1e8;
 }
 
-.lumen-btn-info.revert:active {
-    background-color: #48b9e5;
-    border-color: #1984ae;
-}
 .lumen-btn-warning.revert {
     color: #ff851b;
     border-color: #ff7701;
 }
 
-.lumen-btn-warning.revert:active {
-    background-color: #e76b00;
-    border-color: #c35b00;
-}
 .lumen-btn-danger.revert {
     color: #ff4136;
     border-color: #ff291c;
-}
-
-.lumen-btn-danger.revert:active {
-    background-color: #ff1103;
-    border-color: #de0c00;
 }
 
 .lumen-btn-group {
