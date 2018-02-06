@@ -1,3 +1,7 @@
+/**
+ * Basic Button component
+ * @author Dominic Ming
+ */
 import React from 'react'
 import PropTypes from 'prop-types';
 import "./Button.css";

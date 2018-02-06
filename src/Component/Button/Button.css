@@ -82,7 +82,7 @@
     border-color: #e2e2e2;
 }
 
-.lumen-btn-default:active {
+.lumen-btn-default:active,.lumen-btn-default.revert:active {
     color: #555555;
     background-color: #c3c3c3;
     border-color: #a2a2a2;
@@ -93,7 +93,7 @@
     border-color: #127ba3;
 }
 
-.lumen-btn-primary:active {
+.lumen-btn-primary:active,.lumen-btn-primary.revert:active {
     background-color: #106a8c;
     border-color: #052531;
 }
@@ -102,7 +102,7 @@
     border-color: #23a127;
 }
 
-.lumen-btn-success:active {
+.lumen-btn-success:active,.lumen-btn-success.revert:active {
     background-color: #1f8c22;
     border-color: #0c390e;
 }
@@ -111,7 +111,7 @@
     border-color: #5fc1e8;
 }
 
-.lumen-btn-info:active {
+.lumen-btn-info:active,.lumen-btn-info.revert:active {
     background-color: #48b9e5;
     border-color: #1984ae;
 }
@@ -120,7 +120,7 @@
     border-color: #ff7701;
 }
 
-.lumen-btn-warning:active {
+.lumen-btn-warning:active,.lumen-btn-warning.revert:active {
     background-color: #e76b00;
     border-color: #c35b00;
 }
@@ -129,7 +129,7 @@
     border-color: #ff291c;
 }
 
-.lumen-btn-danger:active {
+.lumen-btn-danger:active,.lumen-btn-danger.revert:active {
     background-color: #ff1103;
     border-color: #de0c00;
 }
@@ -137,12 +137,6 @@
 .lumen-btn-default.revert {
     color: #eeeeee;
     border-color: #e2e2e2;
-}
-
-.lumen-btn-default.revert:active {
-    color: #555555;
-    background-color: #c3c3c3;
-    border-color: #a2a2a2;
 }
 
 .lumen-btn-primary.revert {
