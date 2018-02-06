@@ -5,7 +5,7 @@ import "./Button.css";
 class Button extends React.Component {
   render() {
     const props = this.props;
-    const style = "lumen-btn-" + (props.type || "default") + " " + (props.size || "");
+    const style = "lumen-btn-" + (props.type || "default") + " " + (props.size || "") + (props.revert && "revert");
 
     return (
         <button
@@ -25,6 +25,7 @@ Button.propTypes = {
   type: PropTypes.oneOf(['default','primary','success','info','warning','danger']),
   size: PropTypes.oneOf(['large','small','icon']),
   disabled: PropTypes.bool,
+  revert: PropTypes.bool,
   onClick: PropTypes.func
 };
 

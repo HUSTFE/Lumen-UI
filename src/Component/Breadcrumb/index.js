@@ -9,14 +9,12 @@ class Breadcrumb extends React.Component {
       <ul className={"lumen-bc"}>
         {
           React.Children.map(props.list, function (child) {
-            return <this.item>{child}</this.item>
+            return <li className={"lumen-bc-item"}>{child}</li>
           }.bind(this))
         }
       </ul>
     )
   }
-
-  item = function(props) { return (<li>{props.children}</li>) }
 }
 
 export default Breadcrumb;

@@ -1,6 +1,6 @@
 .lumen-btn {
     display: inline-block;
-    margin-bottom: 0;
+    margin: 0;
     font-weight: bold;
     text-align: center;
     vertical-align: middle;
@@ -23,7 +23,8 @@
     height: 3em;
     text-transform: uppercase;
     color: white;
-    position: relative;
+    overflow: visible;
+    box-sizing: border-box;
 }
 
 .lumen-btn.large {
@@ -46,15 +47,24 @@
 }
 
 .lumen-btn:hover {
-    margin-top: 1px;
     border-bottom-width: 3px;
 }
 
 .lumen-btn:active {
-    margin-top: 2px;
     border-bottom-width: 2px;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+.lumen-btn.revert {
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    background: white;
+}
+
+.lumen-btn.revert:hover {
+    color: white;
 }
 
 .lumen-btn[disabled] {
@@ -66,7 +76,7 @@
     border-bottom-width: 4px;
 }
 
-.lumen-btn-default {
+.lumen-btn-default,.lumen-btn-default.revert:hover {
     color: #555555;
     background-color: #eeeeee;
     border-color: #e2e2e2;
@@ -78,7 +88,7 @@
     border-color: #a2a2a2;
 }
 
-.lumen-btn-primary {
+.lumen-btn-primary,.lumen-btn-primary.revert:hover {
     background-color: #158cba;
     border-color: #127ba3;
 }
@@ -87,7 +97,7 @@
     background-color: #106a8c;
     border-color: #052531;
 }
-.lumen-btn-success {
+.lumen-btn-success,.lumen-btn-success.revert:hover {
     background-color: #28b62c;
     border-color: #23a127;
 }
@@ -96,7 +106,7 @@
     background-color: #1f8c22;
     border-color: #0c390e;
 }
-.lumen-btn-info {
+.lumen-btn-info,.lumen-btn-info.revert:hover {
     background-color: #75caeb;
     border-color: #5fc1e8;
 }
@@ -105,7 +115,7 @@
     background-color: #48b9e5;
     border-color: #1984ae;
 }
-.lumen-btn-warning {
+.lumen-btn-warning,.lumen-btn-warning.revert:hover {
     background-color: #ff851b;
     border-color: #ff7701;
 }
@@ -114,12 +124,69 @@
     background-color: #e76b00;
     border-color: #c35b00;
 }
-.lumen-btn-danger {
+.lumen-btn-danger,.lumen-btn-danger.revert:hover {
     background-color: #ff4136;
     border-color: #ff291c;
 }
 
 .lumen-btn-danger:active {
+    background-color: #ff1103;
+    border-color: #de0c00;
+}
+
+.lumen-btn-default.revert {
+    color: #eeeeee;
+    border-color: #e2e2e2;
+}
+
+.lumen-btn-default.revert:active {
+    color: #555555;
+    background-color: #c3c3c3;
+    border-color: #a2a2a2;
+}
+
+.lumen-btn-primary.revert {
+    color: #158cba;
+    border-color: #127ba3;
+}
+
+.lumen-btn-primary.revert:active {
+    background-color: #106a8c;
+    border-color: #052531;
+}
+.lumen-btn-success.revert {
+    color: #28b62c;
+    border-color: #23a127;
+}
+
+.lumen-btn-success.revert:active {
+    background-color: #1f8c22;
+    border-color: #0c390e;
+}
+.lumen-btn-info.revert {
+    color: #75caeb;
+    border-color: #5fc1e8;
+}
+
+.lumen-btn-info.revert:active {
+    background-color: #48b9e5;
+    border-color: #1984ae;
+}
+.lumen-btn-warning.revert {
+    color: #ff851b;
+    border-color: #ff7701;
+}
+
+.lumen-btn-warning.revert:active {
+    background-color: #e76b00;
+    border-color: #c35b00;
+}
+.lumen-btn-danger.revert {
+    color: #ff4136;
+    border-color: #ff291c;
+}
+
+.lumen-btn-danger.revert:active {
     background-color: #ff1103;
     border-color: #de0c00;
 }
