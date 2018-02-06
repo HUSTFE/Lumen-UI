@@ -10,7 +10,7 @@ class Dropdown extends React.Component {
       <div style={{position: "absolute"}}>
         <ul className={"lumen-dd" + (props.display ? "" : " hidden")} >
           {
-            React.Children.map(props.children, function (child) {
+            React.Children.map(props.list, function (child) {
               return <li className="lumen-dd-item">{child}</li>
             })
           }
@@ -23,7 +23,8 @@ class Dropdown extends React.Component {
 }
 
 Dropdown.propTypes = {
-  display: PropTypes.bool
+  display: PropTypes.bool,
+  list: PropTypes.node
 };
 
 export default Dropdown;
